@@ -33,7 +33,7 @@ final class Headers
         'to' => MailboxListHeader::class,
         'cc' => MailboxListHeader::class,
         'bcc' => MailboxListHeader::class,
-        'message-id' => IdentificationHeader::class,
+        'message-id' => UnstructuredHeader::class,
         'in-reply-to' => UnstructuredHeader::class, // `In-Reply-To` and `References` are less strict than RFC 2822 (3.6.4) to allow users entering the original email's ...
         'references' => UnstructuredHeader::class, // ... `Message-ID`, even if that is no valid `msg-id`
         'return-path' => PathHeader::class,
